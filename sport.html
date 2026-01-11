@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>淡江馬拉松申請表</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav class="nav">
+      <a href="index.html" class="nav__link">首頁</a>
+    <a href="kind.html" class="nav__link">可參加項目</a>
+    <a href="sport.html" class="nav__link">我要報名</a>
+    <a href="contact.html" class="nav__link">聯絡我們</a>
+  </nav>
+
+  <div class="container">
+    <h1> 報名申請單</h1>
+    <h3>請填寫以下資料，我們將與您聯繫安排。</h3>
+
+    <form action="thankyou.html" method="get">
+      <label for="name">姓名：</label>
+      <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
+
+      <label for="email">電子郵件：</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="phone">電話：</label>
+      <input type="tel" id="phone" name="phone" placeholder="0912-345-678" required>
+
+      <label for="animal">想報名的項目：</label>
+      <select id="animal" name="animal" required>
+        <option value="">請選擇項目</option>
+        <option>5k：小跑</option>
+        <option>10k：一般跑</option>
+        <option>21k：半馬</option>
+        <option>42k：全馬</option>
+      </select>
+
+      <p>提供用品：</p>
+      <label><input type="radio" name="house" value="apartment"> 毛巾</label>
+      <label><input type="radio" name="house" value="house"> 水</label>
+      <label><input type="radio" name="house" value="other"> 香蕉</label>
+
+      <p>淡江馬拉松經驗（可複選）：</p>
+      <label><input type="checkbox" name="experience" value="dog"> 42k：全馬</label>
+      <label><input type="checkbox" name="experience" value="cat"> 21k：半馬</label>
+      <label><input type="checkbox" name="experience" value="none"> 無經驗</label>
+      <div class="btn-group">
+        <button class="btn" type="submit">提交申請</button>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    © 2026  淡江馬拉松加油 🐾
+  </footer>
+</body>
+</html>
+
